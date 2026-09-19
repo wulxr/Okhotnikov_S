@@ -1,0 +1,26 @@
+<button type="button" id="subscribeOpen">Подписаться</button>
+<p>Контент страницы. <a href="#">Ссылка под модалкой</a></p>
+
+<dialog class="modal" id="subscribeModal" aria-labelledby="subscribeTitle">
+  <div class="modal__window">
+    <button type="button" class="modal__close" aria-label="Закрыть">×</button>
+    <h2 class="modal__title" id="subscribeTitle">Подписка на новости</h2>
+    <label for="subscribeEmail" class="modal__label">Ваш email</label>
+    <input id="subscribeEmail" class="modal__input" type="email" placeholder="you@example.com">
+    <button type="submit" class="modal__btn">Подписаться</button>
+  </div>
+</dialog>
+
+<script>
+  var modal = document.getElementById('subscribeModal');
+  var openBtn = document.getElementById('subscribeOpen');
+  var closeBtn = modal.querySelector('.modal__close');
+
+  openBtn.addEventListener('click', function () {
+    modal.showModal();
+  });
+
+  closeBtn.addEventListener('click', function () {
+    modal.close();
+  });
+</script>
