@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Сергей — сайт-визитка</title>
+<meta name="description" content="Сергей — студент, изучаю программирование и вёрстку сайтов на HTML и CSS.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%236e1620'/%3E%3Ctext x='32' y='42' font-family='Arial, sans-serif' font-size='30' font-weight='700' fill='%23fff' text-anchor='middle'%3E%D0%A1%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="bg-decor" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+  </div>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <span class="brand-name">Сергей</span>
+      </div>
+      <div class="nav-links">
+        <a href="#profile">Профиль</a>
+        <a href="#skills">Умею</a>
+        <a href="#why">Почему я</a>
+        <a href="#process">Процесс</a>
+        <a href="#faq">Вопросы</a>
+        <a href="#contact">Связь</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-text-col">
+        <span class="tag">открыт для новых задач</span>
+        <h1>Привет, я Сергей</h1>
+        <p class="lead">Разбираюсь в программировании и потихоньку осваиваю вёрстку. Люблю, когда задумка превращается в рабочую страницу, а не остаётся только эскизом.</p>
+        <div class="btn-row">
+          <a class="btn btn-fill" href="https://t.me/wulor" target="_blank" rel="noopener">Написать в Telegram</a>
+          <a class="btn btn-outline" href="#skills">Что я умею</a>
+        </div>
+        <div class="hero-facts">
+          <span>HTML / CSS</span>
+          <span>Учусь программированию</span>
+          <span>Отвечаю в течение дня</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="block reveal" id="profile">
+      <h2 class="block-title">Пару слов о себе</h2>
+      <div class="panel">
+        <p>Учусь на программиста, а по пути втянулся в вёрстку сайтов. Нравится наблюдать, как разрозненные блоки складываются в цельную страницу — от первого наброска до готовой версии, которую можно открыть в браузере.</p>
+        <p>Для меня это больше, чем просто задание: беру тему, продумываю, как всё должно выглядеть, и довожу до конца, а не бросаю на полпути.</p>
+        <div class="tags">
+          <span>студент</span>
+          <span>вёрстка</span>
+          <span>интерфейсы</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="block reveal" id="skills">
+      <h2 class="block-title">Чем занимаюсь</h2>
+      <div class="rows">
+        <div class="row">
+          <span class="row-mark">1</span>
+          <div class="row-body">
+            <h3>Вёрстка страниц</h3>
+            <p>Собираю сайты на HTML и CSS так, чтобы они одинаково хорошо открывались и на компьютере, и на телефоне.</p>
+          </div>
+        </div>
+        <div class="row">
+          <span class="row-mark">2</span>
+          <div class="row-body">
+            <h3>Программирование</h3>
+            <p>Учусь писать код, который решает задачу целиком, а не работает только в теории.</p>
+          </div>
+        </div>
+        <div class="row">
+          <span class="row-mark">3</span>
+          <div class="row-body">
+            <h3>Новое в IT</h3>
+            <p>Слежу за тем, что появляется в индустрии, и пробую разбираться в этом на практике.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block reveal" id="why">
+      <h2 class="block-title">Почему стоит обратиться</h2>
+      <div class="cards">
+        <div class="card">
+          <span class="card-mark">✓</span>
+          <h3>Показываю черновик</h3>
+          <p>Прежде чем доводить до финала, присылаю промежуточный вариант — так меньше правок в конце.</p>
+        </div>
+        <div class="card">
+          <span class="card-mark">✓</span>
+          <h3>На связи каждый день</h3>
+          <p>Отвечаю в Telegram в течение дня, обычно быстрее.</p>
+        </div>
+        <div class="card">
+          <span class="card-mark">✓</span>
+          <h3>Довожу до конца</h3>
+          <p>Не бросаю задачу на середине — сдаю рабочий вариант, а не черновик.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block reveal" id="process">
+      <h2 class="block-title">Как строю работу</h2>
+      <div class="timeline">
+        <div class="tl-item">
+          <span class="tl-dot">1</span>
+          <div>
+            <h4>Знакомимся с задачей</h4>
+            <p>Обсуждаем, что нужно получить в итоге и в какие сроки.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-dot">2</span>
+          <div>
+            <h4>Собираю черновик</h4>
+            <p>Делаю первую версию страницы и показываю, куда всё движется.</p>
+          </div>
+        </div>
+        <div class="tl-item">
+          <span class="tl-dot">3</span>
+          <div>
+            <h4>Готовим финал</h4>
+            <p>Вношу правки и передаю чистовой вариант, готовый к показу.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block reveal" id="faq">
+      <h2 class="block-title">Частые вопросы</h2>
+      <div class="panel faq-panel">
+        <div class="faq-item">
+          <h4>Ты уже где-то работал?</h4>
+          <p>Пока делаю проекты в рамках учёбы и для себя, но задачи беру всерьёз и довожу до готового результата.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Сколько времени занимает сайт-визитка?</h4>
+          <p>Обычно несколько дней — зависит от того, сколько блоков нужно и есть ли готовые тексты и картинки.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Можно внести правки после сдачи?</h4>
+          <p>Да, в разумных пределах — если что-то нужно поменять, просто напиши в Telegram.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <div class="cta-inner">
+        <h2>Нужен сайт-визитка?</h2>
+        <p>Расскажи, что нужно, — обсудим детали и сроки в переписке.</p>
+        <a class="btn btn-light" href="https://t.me/wulor" target="_blank" rel="noopener">Написать в Telegram</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Сергей, сайт-визитка</p>
+  </footer>
+
+  <script>
+    var revealItems = document.querySelectorAll('.reveal');
+
+    var revealObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    revealItems.forEach(function (item) {
+      revealObserver.observe(item);
+    });
+  </script>
+
+</body>
+</html>
